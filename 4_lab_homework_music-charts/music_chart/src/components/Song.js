@@ -4,7 +4,12 @@ const Song = ({song, position}) => {
 
     return(
         <div className="song-detail">
-            <h4>{position} {song['im:artist'].label} {song['im:']}</h4>
+            <h4>{position} {song['im:artist'].label} 
+            <img src={song['im:image'][0].label}></img>
+            <audio controls>
+                <source src={song['link'][2]} type={song['link'][2]}/>
+            </audio>
+            </h4>
         </div>
     )
 }

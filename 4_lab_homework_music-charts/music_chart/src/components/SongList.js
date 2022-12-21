@@ -8,7 +8,7 @@ const SongList = ({ songs }) => {
     })
 
     return (
-        <div>
+        <div className="song-list">
             <ul>
                 {chartList}
             </ul>
